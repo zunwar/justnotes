@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
            SectionsPagerAdapter pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
            ViewPager pager = findViewById(R.id.pager);
            pager.setAdapter(pagerAdapter);
+
+        //Связывание ViewPager с TabLayout
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(pager);
     }
 
     @Override
@@ -78,10 +82,18 @@ public class MainActivity extends AppCompatActivity {
                      return new TaskFragment();
                  case 1:
                      return new DoneFragment();
-                 case 2:
-
              }
              return null;
          }
-     }
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
+            case 0:
+                return getResources().getText(R.string.tasks_tab);
+            case 1:
+                return getResources().getText(R.string.done_tab);
+        }
+        return null;
+    }
+}
 }

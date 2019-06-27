@@ -32,11 +32,11 @@ public class DoneFragment extends Fragment {
 
  //   FloatingActionButton fab = getView().findViewById(R.id.coor);
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        View view = getView();
-    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        View view = getView();
+//    }
 
 
 }

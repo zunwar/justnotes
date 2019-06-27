@@ -4,6 +4,8 @@
     <string name="action_share">Share</string>
     <string name="action_appinfo">About</string>
     <string name="taskplan">taskplan_image</string>
+    <string name="tasks_tab">Tasks</string>
+    <string name="done_tab">Done</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
