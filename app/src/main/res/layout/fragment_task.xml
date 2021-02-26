@@ -9,102 +9,79 @@
     tools:context=".TaskFragment"
     android:id="@+id/coor">
 
-
-
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <LinearLayout
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nsv"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RelLay">
+                <android.support.v7.widget.AppCompatEditText
+                    android:background="@drawable/shape_edittext"
+                    android:id="@+id/enter_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Go ahead \nSend note"
+                    android:inputType="textMultiLine|textLongMessage"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/itemSendButton_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/shape_send_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/baseline_send_24" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="100dp"
+                        android:id="@+id/LiLa"
+                        >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+       <!-- <android.support.v7.widget.AppCompatTextView
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:id="@+id/vtest"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/soft_green"
+            android:hint="privet">
+        </android.support.v7.widget.AppCompatTextView>
+    -->
+    <!--
+      <Button
+          android:layout_width = "wrap_content"
+          android:layout_height = "wrap_content"
+          android:id="@+id/knopka"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="150dp"
+          android:text="vtoraya knopka">
+      </Button>
+  -->
 
-            android:padding="16dp">
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="tasks will arrive soon" />
-
-
-
-
-
-
-        </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
-
-
-
-
-</android.support.design.widget.CoordinatorLayout>
+  </android.support.design.widget.CoordinatorLayout>

@@ -26,9 +26,21 @@ public class DoneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+//        View view = inflater.inflate(R.layout.fragment_done, container , false);
         return inflater.inflate(R.layout.fragment_done, container, false);
-//        View view = inflater.inflate(R.layout.fragment_done, container , false)
     }
+
+//public void onSwitch (LayoutInflater inflater,ViewGroup container){
+//    View view = inflater.inflate(R.layout.fragment_done, container , false);
+//        FloatingActionButton fab_btn = view.findViewById(R.id.fab_btn);
+//        fab_btn.hide();
+//    }
+
+//    public  int onSwitch (){
+//return 5;
+//    }
+
+
 
  //   FloatingActionButton fab = getView().findViewById(R.id.coor);
 

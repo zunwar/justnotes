@@ -5,6 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="red">#9E0432</color>
     <color name="green">#139E04</color>
+    <color name="soft_green">#90DC87</color>
     <color name="blue">#082EAC</color>
     <color name="tab_ind_color">#570491</color>
+    <color name="colorEditTextBorder">#DB645B</color>
+    <color name="orange">#F44336</color>
+    <color name="black">#2C0907</color>
+    <color name="note">#7E80EF</color>
 </resources>

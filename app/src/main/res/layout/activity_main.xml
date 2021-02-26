@@ -53,7 +53,7 @@
             android:layout_gravity="end|bottom"
 
             android:layout_margin="25dp"
-            android:onClick="onClickDone"
+            android:onClick="onClick_fab_act"
             android:src="@drawable/baseline_add_circle_outline_black_48" />
     </android.support.design.widget.CoordinatorLayout>
 
